@@ -18,3 +18,18 @@ function getHero() {
 hero = getHero();
 hero = true;
 hero = 100;
+const sayHello = (name) => {
+    return `Hello ${name}`;
+};
+console.log(sayHello('John Doe'));
+const consoleError = (message) => {
+    console.log(message);
+};
+const throwError = (message) => {
+    throw new Error(message);
+};
+const handleError = (message) => {
+    if (message === 'ERROR')
+        return 'Status 400';
+    return 'Status 200 OK';
+};

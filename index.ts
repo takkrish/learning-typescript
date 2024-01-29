@@ -24,4 +24,23 @@ hero = getHero();
 hero = true;
 hero = 100;
 
+const sayHello = (name: string): string => {
+	return `Hello ${name}`;
+};
+
+console.log(sayHello('John Doe'));
+
+const consoleError = (message: string): void => {
+	console.log(message);
+};
+
+const throwError = (message: string): never => {
+	throw new Error(message);
+};
+
+const handleError = (message: string): string => {
+	if (message === 'ERROR') return 'Status 400';
+	return 'Status 200 OK';
+};
+
 export {};
