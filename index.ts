@@ -14,4 +14,14 @@ function addTwo(num: number) {
 const result = addTwo(5);
 console.log(result);
 
+let hero; // type : any
+
+function getHero() {
+	return 'Thor';
+}
+
+hero = getHero();
+hero = true;
+hero = 100;
+
 export {};
